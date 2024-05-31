@@ -1,0 +1,14 @@
+drone:
+  port: sitl #{sitl, ros, cf}
+  
+simulation:
+  simulator: gazebo #{gazebo,jmavsim,ros} 
+  speed: 1
+  headless: true
+
+test:
+  commands_file: samples/flights/manual1.ulg
+
+assertion:
+  log_file: samples/flights/manual1.ulg
+  variable: trajectory
